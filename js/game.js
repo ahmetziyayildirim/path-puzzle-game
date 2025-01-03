@@ -600,7 +600,7 @@ class PathPuzzle {
 
         return messages.find(m => score <= m.max) || messages[messages.length - 1];
     }
-}
+};
 
 // Start game when page loads
 window.addEventListener('load', () => {
