@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Path Puzzle Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-logo">Path Puzzle Game</h1>
+        <div class="player-info">
+            <input type="text" id="player-name" placeholder="Enter your name" maxlength="20">
+        </div>
+        <div class="rules">
+            <button id="toggle-rules">Hide Rules</button>
+            <div class="rules-content">
+                <h2>Rules</h2>
+                <ul>
+                    <li>Start by placing number 1 anywhere on the grid</li>
+                    <li>Place the next number following these movement rules:</li>
+                    <ul>
+                        <li>3 squares horizontally (left/right) ⬅️➡️</li>
+                        <li>3 squares vertically (up/down) ⬆️⬇️</li>
+                        <li>2 squares diagonally ↗️↘️↙️↖️</li>
+                    </ul>
+                    <li>Game ends when no valid moves are available</li>
+                    <li>Your score is the highest number you placed</li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+            <span>Current Number: <span id="current-number">1</span></span>
+            <span>Time: <span id="timer">00:00</span></span>
+            <span id="message"></span>
+        </div>
+        <div id="grid" class="grid"></div>
+        <div class="scores-section">
+            <button id="new-game">New Game</button>
+            <div class="high-scores">
+                <h3>Top 5 High Scores</h3>
+                <ul id="high-scores-list"></ul>
+            </div>
+        </div>
+        <div id="game-over-modal" class="modal">
+            <div class="modal-content">
+                <h2>Game Over!</h2>
+                <p id="final-score"></p>
+                <p id="final-time"></p>
+                <div id="score-gif" class="score-gif"></div>
+                <p id="score-message" class="score-message"></p>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html> 
