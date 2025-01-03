@@ -155,16 +155,16 @@ class PathPuzzle {
             gifUrl = "/assets/gifs/clueless.gif";
         } else if (score <= 40) {
             message = "Below Average: There's potential, but it's still hiding somewhere.";
-            gifUrl = "/assets/gifs/below-average.gif";
+            gifUrl = "/assets/gifs/belowaverage.gif";
         } else if (score <= 50) {
             message = "Average Joe/Jane: You're on par with society's expectations—nothing more, nothing less.";
             gifUrl = "/assets/gifs/average.gif";
         } else if (score <= 60) {
             message = "Bright Spark: There's a flicker of brilliance. Keep it up!";
-            gifUrl = "/assets/gifs/bright-spark.gif";
+            gifUrl = "/assets/gifs/brightspark.gif";
         } else if (score <= 70) {
             message = "Smarty Pants: You've got some moves! A little more effort, and you'll shine.";
-            gifUrl = "/assets/gifs/smarty-pants.gif";
+            gifUrl = "/assets/gifs/smartypants.gif";
         } else if (score <= 80) {
             message = "Brainiac-in-Training: Your neurons are firing! You're almost there.";
             gifUrl = "/assets/gifs/brainiac.gif";
@@ -176,7 +176,7 @@ class PathPuzzle {
             gifUrl = "/assets/gifs/overlord.gif";
         } else if (score === 95) {
             message = "Almost Genius: You can feel the brilliance just within reach. A little more effort, and you're ready to patent something absurdly useful!";
-            gifUrl = "/assets/gifs/almost-genius.gif";
+            gifUrl = "/assets/gifs/almostgenius.gif";
         } else if (score === 96) {
             message = "Borderline Einstein: Your brain is officially in overdrive, but there's still a smidgen of room for improvement. Maybe read a quantum physics paper for fun?";
             gifUrl = "/assets/gifs/einstein.gif";
